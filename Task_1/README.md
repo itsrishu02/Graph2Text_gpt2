@@ -11,9 +11,9 @@ pip install -r requirements.txt
 ```
 
 
-
 ## Dataset
-The WebNLG dataset is used in this project. Ensure the dataset is downloaded and accessible.
+The WebNLG dataset is used in this project. Ensure the dataset is downloaded and accessible. You can find it [here](https://synalp.gitlabpages.inria.fr/webnlg-challenge/challenge_2017/).
+
 
 ## Preprocessing
 Before fine-tuning, preprocess the WebNLG dataset to convert it into the format required for the model. To preprocess, run:
