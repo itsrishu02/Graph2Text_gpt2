@@ -61,16 +61,6 @@ python inference.py
 - **BLEU**: Assesses textual similarity with reference text.
 - **ROUGE**: Measures the recall of n-grams and longest common subsequences.
 
-## Troubleshooting
-
-### Common Errors
-
-1. **Embedding Size Mismatch**:
-    Ensure `node_to_idx.json` matches the training data.
-
-2. **Missing Dependencies**:
-    Run `pip install -r requirements.txt` to install all required libraries.
-
 ## Contributing
 
 Feel free to fork the repository, make changes, and submit a pull request!
