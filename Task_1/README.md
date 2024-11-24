@@ -6,6 +6,11 @@ This project leverages the HuggingFace framework. Please refer to the [HuggingFa
 ## Environments and Dependencies
 - **Python**: Python 3.9.20
 
+```bash
+pip install -r requirements.txt
+```
+
+
 
 ## Dataset
 The WebNLG dataset is used in this project. Ensure the dataset is downloaded and accessible.
