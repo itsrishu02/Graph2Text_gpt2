@@ -1,5 +1,5 @@
 
-# WebNLG Dataset - Fine-tuning and Decoding with HuggingFace
+# Graph to Text - Fine-tuning and Decoding with HuggingFace
 
 This project leverages the HuggingFace framework. Please refer to the [HuggingFace documentation](https://huggingface.co) for further details on installation and dependencies.
 
@@ -26,7 +26,7 @@ Replace `<dataset_folder>` with the path to the WebNLG dataset.
 To fine-tune the model on the WebNLG dataset, execute:
 
 ```bash
-./finetune_WEBNLG.sh <model> <gpu_id>
+./finetune_graph2text.sh <model> <gpu_id>
 ```
 
 - `<model>` options: `gpt2`.
@@ -34,14 +34,14 @@ To fine-tune the model on the WebNLG dataset, execute:
 
 ### Example
 ```bash
-./finetune_WEBNLG.sh t5-base 0
+./finetune_graph2text.sh gpt2 0
 ```
 
 ## Decoding
 To decode using a fine-tuned model on the WebNLG dataset, run:
 
 ```bash
-./decode_WEBNLG.sh <model> <checkpoint> <gpu_id>
+./test_graph2text.sh <model> <checkpoint> <gpu_id>
 ```
 
 - `<model>`: The model used for fine-tuning.
@@ -50,7 +50,7 @@ To decode using a fine-tuned model on the WebNLG dataset, run:
 
 ### Example
 ```bash
-./decode_WEBNLG.sh t5-base webnlg-t5-base.ckpt 0
+./test_graph2text.sh  gpt2 webnlg-gpt2-base.ckpt 0
 ```
 
 ## Notes
