@@ -4,11 +4,8 @@
 This project leverages the HuggingFace framework. Please refer to the [HuggingFace documentation](https://huggingface.co) for further details on installation and dependencies.
 
 ## Environments and Dependencies
-- **Python**: 3.6
-- **Transformers**: 3.3.1
-- **PyTorch Lightning**: 0.9.0
-- **Torch**: 1.4.0
-- **Parsimonious**: 0.8.1
+- **Python**: Python 3.9.20
+
 
 ## Dataset
 The WebNLG dataset is used in this project. Ensure the dataset is downloaded and accessible.
