@@ -45,7 +45,6 @@ Train the model with the provided `train.py` script:
 ```bash
 python train.py
 ```
-- Generates `node_to_idx.json` for node indexing.
 - Saves model checkpoints (e.g., `best_model_epoch_10.pt`).
 
 ### Inference
