@@ -8,29 +8,10 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from rouge import Rouge
 from torch.utils.data import TensorDataset, DataLoader
 from tqdm import tqdm
-import re
 import sacrebleu
 
 # ================================
-# 1. Tokenizer Definition
-# ================================
-
-def regex_tokenize(text):
-    """
-    Tokenizes input text using regular expressions.
-
-    Args:
-        text (str): The input text to tokenize.
-
-    Returns:
-        List[str]: A list of tokens.
-    """
-    pattern = r"\b\w+(?:'\w+)?\b"
-    tokens = re.findall(pattern, text.lower())
-    return tokens
-
-# ================================
-# 2. Data Parsing Functions
+# 1. Data Parsing Functions
 # ================================
 
 def ensure_feature_dim(graph_data, required_dim, device):
@@ -144,7 +125,7 @@ def process_target_data(target_file, tokenizer, max_length=64, device='cpu'):
     return input_ids, labels
 
 # ================================
-# 3. Model Definitions
+# 2. Model Definitions
 # ================================
 
 class GraphEmbeddingModel(nn.Module):
@@ -230,7 +211,7 @@ class GraphToTextModel(nn.Module):
         return lm_outputs
 
 # ================================
-# 4. Training Function
+# 3. Training Function
 # ================================
 
 def train_model(
@@ -425,7 +406,7 @@ def train_model(
     print("\nTraining complete.")
 
 # ================================
-# 5. Main Execution
+# 4. Main Execution
 # ================================
 
 if __name__ == "__main__":
